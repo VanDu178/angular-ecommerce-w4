@@ -1,0 +1,11 @@
+<div class="home">
+    <div class="hero-section">
+        <h1>Chào Mừng Bạn đến với Cửa Hàng Rau Củ Quả!</h1>
+        <p>Khám phá những sản phẩm tươi ngon, chất lượng tốt nhất cho sức khỏe của bạn.</p>
+    </div>
+
+    <div class="product-list">
+        <app-product-item *ngFor="let product of products" [product]="product" (addToCart)="onAddToCart($event)">
+        </app-product-item>
+    </div>
+</div>

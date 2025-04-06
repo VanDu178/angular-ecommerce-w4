@@ -1,0 +1,9 @@
+<div class="cart-item">
+    <img [src]="item.image" alt="{{ item.name }}" class="cart-item-image">
+    <div class="cart-item-details">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.description }}</p>
+        <p>{{ item.price | currency }}</p>
+        <p>Số lượng: {{ item.quantity }}</p>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="cart">
+    <h2>Giỏ Hàng</h2>
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+        <app-cart-item *ngFor="let item of cartItems" [item]="item">
+        </app-cart-item>
+        <h3>Tổng tiền: {{ totalPrice | currency }}</h3>
+    </div>
+    <ng-template #emptyCart>
+        <p>Giỏ hàng của bạn đang trống.</p>
+    </ng-template>
+</div>
