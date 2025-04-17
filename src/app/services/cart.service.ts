@@ -32,7 +32,6 @@ export class CartService {
 
   // Lấy số lượng sản phẩm trong giỏ hàng
   getCartItemCount(): number {
-    alert("kich hoat")
     return this.cartItems.reduce((count, item) => count + item.quantity, 0);
   }
 }

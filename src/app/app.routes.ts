@@ -1,9 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { CartComponent } from './pages/cart/cart.component';
-import {LoginComponent} from './pages/auth/login/login.component'; // nếu có AuthComponent
+import {LoginComponent} from './pages/auth/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
-
 export const routes: Routes = [
   {
     path: '',
